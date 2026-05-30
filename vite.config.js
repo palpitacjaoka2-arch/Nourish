@@ -17,7 +17,11 @@ export default defineConfig({
   orientation: 'portrait',
   scope: '/Nourish/',
   start_url: '/Nourish/',
-  icons: [...]
+  icons: [
+        { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
+        { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
+        { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any maskable' }
+      ]
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
